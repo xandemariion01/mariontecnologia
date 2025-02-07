@@ -2,13 +2,14 @@
 
 
 /* Configurações gerais */
-body, html {
+body,
+html {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #333;
     font-size: 16px;
     overflow-x: hidden;
-    
+
 }
 
 /* Navbar fixa e transparente */
@@ -82,7 +83,7 @@ body, html {
 
 /* Carousel */
 .carousel-item {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     background-size: cover;
     background-position: center;
@@ -106,37 +107,26 @@ body, html {
 
 .carousel-control-prev,
 .carousel-control-next {
-    display: none !important;
+    display: block !important;
+    /* Mostrar controles */
 }
-
-/* Efeito na imagem */
-.hover-effect {
-    border-radius: 10px;
-    transition: transform 0.3s ease, filter 0.3s ease;
-    filter: brightness(0.7);
-}
-
-.hover-effect:hover {
-    transform: scale(1.05);
-    filter: brightness(1.2);
-}
-
 
 /* Ajuste para telas menores, como celulares */
 @media (max-width: 768px) {
     .carousel-item {
-        background-size: cover;
-        background-position: center center;
-        height: 60vh;
+        min-height: 60vh;
+    }
+
+    .carousel-caption {
+        font-size: 14px;
+        padding: 10px;
     }
 }
 
 /* Ajuste extra para telas muito pequenas */
 @media (max-width: 480px) {
     .carousel-item {
-        background-size: cover;
-        background-position: center center;
-        height: 50vh;
+        min-height: 50vh;
     }
 }
 
@@ -434,10 +424,12 @@ body, html {
     padding: 20px;
     border-radius: 8px;
     width: 100%;
-    max-width: 500px; /* Define o máximo de largura */
+    max-width: 500px;
+    /* Define o máximo de largura */
     text-align: center;
     position: relative;
-    box-sizing: border-box; /* Garante que o padding não ultrapasse a largura */
+    box-sizing: border-box;
+    /* Garante que o padding não ultrapasse a largura */
 }
 
 /* Botão para fechar o pop-up */
@@ -476,4 +468,3 @@ body, html {
         /* Garante que a imagem ocupe toda a largura disponível */
     }
 }
-
