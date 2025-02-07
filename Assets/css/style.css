@@ -115,11 +115,20 @@ html {
 @media (max-width: 768px) {
     .carousel-item {
         min-height: 60vh;
+        min-height: -webkit-fill-available;
+        /* Para Safari */
     }
 
     .carousel-caption {
         font-size: 14px;
         padding: 10px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 30px;
+        /* Reduzir o tamanho dos controles */
+        height: 30px;
     }
 }
 
@@ -127,6 +136,8 @@ html {
 @media (max-width: 480px) {
     .carousel-item {
         min-height: 50vh;
+        min-height: -webkit-fill-available;
+        /* Para Safari */
     }
 }
 
@@ -467,4 +478,17 @@ html {
         max-width: 100%;
         /* Garante que a imagem ocupe toda a largura disponível */
     }
+}
+
+.hover-effect {
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: brightness(0.7);
+}
+
+.hover-effect:hover {
+    transform: scale(1.05);
+    /* Aumenta ligeiramente o tamanho */
+    filter: brightness(1.2);
+    /* Aumenta o brilho */
 }
