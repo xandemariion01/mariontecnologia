@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Configurações básicas -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Título do site -->
+    <title>Marion Tecnologia - Inovação e Soluções Inteligentes</title>
+
+    <!-- Descrição do site (SEO) -->
+    <meta name="description"
+        content="Marion Tecnologia oferece soluções inovadoras em tecnologia para impulsionar sua empresa.">
+
+    <!-- Palavras-chave (SEO - uso opcional, mas não tão relevante quanto a descrição) -->
+    <meta name="keywords" content="tecnologia, inovação, sistemas, soluções inteligentes, Marion Tecnologia">
+
+    <!-- Autor -->
+    <meta name="author" content="Marion Tecnologia">
+
+    <!-- Controle de indexação e SEO -->
+    <meta name="robots" content="index, follow"> <!-- Permite indexação e navegação pelos links -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="/Assets/img/favicon/ico.ico" type="image/x-icon">
+    <!-- Substitua 'favicon.ico' pelo caminho do seu favicon -->
+    <link rel="apple-touch-icon" href="/Assets/img/favicon/ico.png"> <!-- Ícone para dispositivos Apple -->
+
+    <!-- Redes sociais (Open Graph - Facebook, LinkedIn) -->
+    <meta property="og:title" content="Marion Tecnologia - Inovação e Soluções Inteligentes">
+    <meta property="og:description"
+        content="Marion Tecnologia oferece soluções inovadoras em tecnologia para impulsionar sua empresa.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mariontecnologia.com.br"> <!-- Substitua pelo URL real -->
+    <meta property="og:image" content="https://www.mariontecnologia.com.br/imagem-destaque.jpg">
+    <!-- Substitua pelo URL da imagem -->
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Marion Tecnologia - Inovação e Soluções Inteligentes">
+    <meta name="twitter:description" content="Soluções inovadoras em tecnologia para empresas de todos os tamanhos.">
+    <meta name="twitter:image" content="https://www.mariontecnologia.com.br/imagem-destaque.jpg">
+    <!-- Substitua pelo URL da imagem -->
+
+    <!-- Tema do navegador (Mobile) -->
+    <meta name="theme-color" content="#0d6efd"> <!-- Substitua pela cor principal do site -->
+
+
+    <!-- Outros (caso aplique) -->
+    <link rel="canonical" href="https://www.mariontecnologia.com.br"> <!-- URL oficial da página -->
+
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="/Assets/css/style.css">
+
+    <!-- Fontes do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Animações AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!-- Boodstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="container-fluid btn-header">
+        <header class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <!--  <img class="logo" src="./Assets/img/Logo/1.png" alt="Logo Marion Tecnologia" width="150"> -->
+                </a>
+
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item text-center"><a class="nav-link" href="#">Início</a></li>
+
+                        <!-- Dropdown: Sobre -->
+                        <li class="nav-item dropdown text-center">
+                            <a class="nav-link" href="" id="sobreDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sobre
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="sobreDropdown">
+                                <li><a class="dropdown-item" href="./Assets/Pages/sobre.html">Empresa</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.youtube.com/@DigisatTecnologia/videos">Vídeos</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Dropdown: Sistemas -->
+                        <li class="nav-item dropdown text-center">
+                            <a class="nav-link" href="#" id="sistemasDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sistemas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="sistemasDropdown">
+                                <li><a class="dropdown-item"
+                                        href="https://www.digisat.com.br/sistemas/detalhes/sistema-mei/sistema">Sistema
+                                        MEI</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.digisat.com.br/sistemas/detalhes/sistema-comercial/sistema">Sistema
+                                        Comercial</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.digisat.com.br/sistemas/detalhes/sistema-gerencial/sistema">Sistema
+                                        Gerencial</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.digisat.com.br/sistemas/detalhes/sistema-administrador/sistema">Sistema
+                                        Administrador</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.digisat.com.br/sistemas/detalhes/sistema-administrador-industrial/sistema">Sistema
+                                        Administrador Industrial</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Dropdown: Suporte -->
+                        <li class="nav-item dropdown text-center">
+                            <a class="nav-link" href="#" id="suporteDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Suporte
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="suporteDropdown">
+                                <!-- <li><a class="dropdown-item" href="/atualizacao/">Instalação / Atualização</a></li>
+                                <li><a class="dropdown-item" href="/faqs/">Perguntas Frequentes</a></li> -->
+                                <li><a class="dropdown-item"
+                                        href="https://anydesk.com/pt/downloads/thank-you?dv=win_exe">Anydesk</a></li>
+                                <!-- <li><a class="dropdown-item" href="/habilitacao/">Habilitação</a></li> -->
+                            </ul>
+                        </li>
+
+                        <!-- Dropdown: Contato -->
+                        <li class="nav-item dropdown text-center">
+                            <a class="nav-link" href="#" id="contatoDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Contato
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="contatoDropdown">
+                                <li>
+                                    <a class="dropdown-item"
+                                        href="https://wa.me/554998218134?text=Olá!%20Gostaria%20de%20mais%20informações."
+                                        target="_blank">
+                                        Estou Interessado
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image: url('./Assets/img/Banner/banner_1.png');">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <!-- Conteúdo opcional -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('./Assets/img/Banner/banner_1.png');">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <!-- Conteúdo opcional -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('./Assets/img/Banner/banner_1.png');">
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <!-- Conteúdo opcional -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+
+    <section class="py-5 section-light">
+        <div class="container px-4 py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 order-lg-last" data-aos="fade-up" data-aos-duration="3000">
+                    <img src="./Assets/img/Logo/Sistemas.png" class="img-fluid rounded shadow hover-effect"
+                        alt="Pr. Roberto Carlos" loading="lazy">
+                    <h5 class="mt-3">Alexandre Marion</h5>
+                    <p class="text-muted">Proprietario da Marion Tecnologia</p>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="3000">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Gestão. Tecnologia. Solução.
+                    </h1>
+                    <p class="lead">Transformamos gestão e tecnologia em soluções inteligentes para o seu sucesso!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5">
+        <div class="container">
+            <div class="btn-solution text-center py-5">
+                <h1 class="animated-title" data-aos="fade-up" data-aos-duration="2000">
+                    Transformamos seu negócio em um case de sucesso.
+                </h1>
+                <h3 class="animated-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="2000">
+                    Conheça as soluções que revolucionam empresas!
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="sistemas">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-4" data-aos="flip-left" data-aos-duration="3000">
+                    <div class="card text-center custom-card comercial">
+                        <!-- <div class="custom-card-header">
+                            Comercial
+                        </div> -->
+                        <img src="./Assets/img/Sistemas/comercial.png" class="card-img-top custom-card-img"
+                            alt="Imagem Comercial">
+                        <div class="card-body">
+                            <p class="card-text">Sistema voltado para otimizar suas vendas e o relacionamento com seus
+                                clientes.</p>
+                            <a href="https://www.digisat.com.br/sistemas/detalhes/sistema-comercial/sistema"
+                                class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 mt-md-0" data-aos="flip-left" data-aos-duration="3000">
+                    <div class="card text-center custom-card gerencial">
+                        <!-- <div class="custom-card-header">
+                            Gerencial
+                        </div> -->
+                        <img src="./Assets/img/Sistemas/gerencial.png" class="card-img-top custom-card-img"
+                            alt="Imagem Gerencial">
+                        <div class="card-body">
+                            <p class="card-text">Gerencie sua empresa de forma eficiente com nossas soluções robustas.
+                            </p>
+                            <a href="https://www.digisat.com.br/sistemas/detalhes/sistema-gerencial/sistema"
+                                class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 mt-md-0" data-aos="flip-left" data-aos-duration="3000">
+                    <div class="card text-center custom-card administrador">
+                        <!-- <div class="custom-card-header">
+                            Administrador
+                        </div> -->
+                        <img src="./Assets/img/Sistemas/administrador.png" class="card-img-top custom-card-img"
+                            alt="Imagem Administrador">
+                        <div class="card-body">
+                            <p class="card-text">Controle administrativo completo para decisões estratégicas e eficazes.
+                            </p>
+                            <a href="https://www.digisat.com.br/sistemas/detalhes/sistema-administrador/sistema"
+                                class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-4" data-aos="flip-left" data-aos-duration="3000">
+                    <div class="card text-center custom-card digiweb">
+                        <!-- <div class="custom-card-header">
+                            Digisat Web
+                        </div> -->
+                        <img src="./Assets/img/Sistemas/Digisatweb.png" class="card-img-top custom-card-img"
+                            alt="Imagem DigisatWeb">
+                        <div class="card-body">
+                            <p class="card-text">Descubra como simplificar processos e impulsionar o sucesso da sua
+                                empresa!</p>
+                            <a href="https://www.youtube.com/watch?v=s830zEVj1v4" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 mt-md-0" data-aos="flip-left" data-aos-duration="3000">
+                    <div class="card text-center custom-card admindustria">
+                        <!-- <div class="custom-card-header">
+                            Administrador
+                        </div> -->
+                        <img src="./Assets/img/Sistemas/admindustria.png" class="card-img-top custom-card-img"
+                            alt="Imagem Administrador">
+                        <div class="card-body">
+                            <p class="card-text">Controle administrativo completo para decisões estratégicas e eficazes.
+                            </p>
+                            <a href="https://www.digisat.com.br/sistemas/detalhes/sistema-administrador-industrial/sistema"
+                                class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-4 mt-md-0" data-aos="flip-left" data-aos-duration="3000">
+                    <div class="card text-center custom-card pedirmenu">
+                        <!-- <div class="custom-card-header">
+                            Pedir Menu
+                        </div> -->
+                        <img src="./Assets/img/Sistemas/pedirmenu.png" class="card-img-top custom-card-img"
+                            alt="Imagem Gerencial">
+                        <div class="card-body">
+                            <p class="card-text">Gerencie sua empresa de forma eficiente com nossas soluções robustas.
+                            </p>
+                            <a href="https://www.pedir.menu/" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="segmentos">
+        <div class="container padding_section">
+            <div class="btn-solution text-center py-5">
+                <h1 class="animated-title" data-aos="fade-up" data-aos-duration="2000">
+                    Áreas de Atuação
+                </h1>
+                <h3 class="animated-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="2000">
+                    Em qual segmento podemos impulsionar o seu sucesso?
+                </h3>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="./Assets/img/Segmentos/px-assistencia-tec.png" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-autopecas.png">
+                            <h4 class="text-center">Assistência técnica</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/autopecas/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-bares-restaurantes.png">
+                            <h4 class="text-center">Autopeças</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/bares-e-restaurantes/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-bares-restaurantes.png">
+                            <h4 class="text-center">Bares e Restaurantes</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="./Assets/img/Segmentos/px-bicicletarias.png" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-bicicletarias.png">
+                            <h4 class="text-center">Bicicletarias</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/brinquedos/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-brinquedos.png">
+                            <h4 class="text-center">Brinquedos</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/calcados/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-calcados.png">
+                            <h4 class="text-center">Calçados</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/comercio-de-tintas/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-comercio-tintas.png">
+                            <h4 class="text-center">Comércio de tintas</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/comercio-em-geral/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-comercio-geral.png">
+                            <h4 class="text-center">Comércio em geral</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/conveniencias/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-conveniencia.png">
+                            <h4 class="text-center">Conveniência</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/distribuidoras/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-distribuidoras.png">
+                            <h4 class="text-center">Distribuidoras</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/farmacias/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-farmacias.png">
+                            <h4 class="text-center">Farmácias</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/ferragens/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-ferranges.png">
+                            <h4 class="text-center">Ferragens</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/industria/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-industria.png">
+                            <h4 class="text-center">Indústria</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/informatica/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-informatica.png">
+                            <h4 class="text-center">Informática</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/joalherias/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-joalherias.png">
+                            <h4 class="text-center">Joalherias</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/lanchonetes/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-lanchonetes.png">
+                            <h4 class="text-center">Lanchonetes</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/livrarias-e-papelarias/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-livrarias-papelarias.png">
+                            <h4 class="text-center">Livrarias e Papelarias</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/lojas-de-confeccoes/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-lojas-confeccoes.png">
+                            <h4 class="text-center">Lojas de Confecções</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/lojas-de-varejo/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-lojas-varejo.png">
+                            <h4 class="text-center">Lojas de varejo</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/materiais-de-construcao/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-materiais-construcao.png">
+                            <h4 class="text-center">Materias de construção</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/materiais-eletricos/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-materiais-eletrics.png">
+                            <h4 class="text-center">Materiais elétricos</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/mercados-e-supermercados/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-mercados.png">
+                            <h4 class="text-center">Mercados e Supermacados</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/moveis-e-eletrodomesticos/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-moveis.png">
+                            <h4 class="text-center">Móveis e Eletrodomésticos</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/oficinas/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-oficinas.png">
+                            <h4 class="text-center">Oficinas</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/papelarias/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-papelarias.png">
+                            <h4 class="text-center">Papelarias</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/perfumaria/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-perfumaria.png">
+                            <h4 class="text-center">Perfumaria</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/pet-shop/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-pet-shop.png">
+                            <h4 class="text-center">Pet Shop</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/posto-de-combustivel/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-posto-combustivel.png">
+                            <h4 class="text-center">Posto de combustível</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 py-3">
+                    <div align="center">
+                        <a href="https://www.digisat.com.br/segmento/vidracarias/" target="_blank"
+                            class="width_icon_links text-decoration-none">
+                            <img src="./Assets/img/Segmentos/px-vidracarias.png">
+                            <h4 class="text-center">Vidraçarias</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row align-items-center my-5">
+            <!-- Image Column -->
+            <div class="col-md-6 order-md-2 text-center">
+                <img src="./Assets/img/Sistemas/prop.png" alt="VOCÊ PROCURA SISTEMAS COMPLETOS PARA SUA EMPRESA?"
+                    class="img-fluid" data-aos="fade-right" data-aos-duration="2000">
+            </div>
+
+            <!-- Content Column -->
+            <div class="col-md-6 order-md-1">
+                <div class="card p-4 shadow-lg" data-aos="fade-left" data-aos-duration="2000">
+                    <h3 class="mb-4 text-center">Sistemas Completos para sua Empresa</h3>
+
+                    <div class="row gy-4">
+                        <!-- Card 1 -->
+                        <div class="col-12">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-circle bg-primary text-white me-3">
+                                    <i class="fa fa-chart-line fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Relatórios Gerenciais Avançados</h5>
+                                    <p class="text-muted mt-2 small">Acompanhe o desempenho da sua empresa com
+                                        relatórios detalhados em tempo real.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-12">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-circle bg-danger text-white me-3">
+                                    <i class="fa fa-cloud-upload-alt fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Backup Automático</h5>
+                                    <p class="text-muted mt-2 small">Garanta a segurança dos seus dados com backups
+                                        automáticos e acessíveis a qualquer momento.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-12">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-circle bg-info text-white me-3">
+                                    <i class="fa fa-mobile-alt fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Acesso Mobile Integrado</h5>
+                                    <p class="text-muted mt-2 small">Gerencie sua empresa diretamente do celular com uma
+                                        interface prática e moderna.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="col-12">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-circle bg-success text-white me-3">
+                                    <i class="fas fa-shield-alt fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Segurança de Dados Avançada</h5>
+                                    <p class="text-muted mt-2 small">Proteja informações sensíveis com criptografia e
+                                        controle de acesso personalizado.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                        <svg class="bi" width="30" height="24">
+                            <use xlink:href="#bootstrap" />
+                        </svg>
+                    </a>
+                    <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Marion Tecnologia. <small> Todos os direitos
+                            reservados.</small></span>
+                </div>
+
+                <ul class="nav col-md-4 list-unstyled social-icons">
+                    <li>
+                        <a class="text-body-secondary instagram" href="https://www.instagram.com/mariontecnologia/"
+                            target="_blank" aria-label="Instagram">
+                            <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-body-secondary facebook" href="https://www.facebook.com/digisattecnologia/"
+                            target="_blank" aria-label="Facebook">
+                            <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">×</span>
+            <img src="./Assets/img/Banner/Sistemas.png" alt="Imagem do Pop-up" class="popup-image">
+            <h2>Bem-vindo!</h2>
+            <p>Oportunidade Exclusiva para Você!</p>
+            <button class="close-popup-btn">Fechar</button>
+        </div>
+    </div>
+
+
+    <a href="whatsapp://send?phone=554998218134&text=Olá!%20Gostaria%20de%20mais%20informações." id="whatsapp-btn"
+        class="whatsapp-btn" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- contato JS -->
+    <script src="./Assets/js/contato.js"></script>
+
+    <!--Pop-Up-->
+    <script src="./Assets/js/pop-up.js"></script>
+
+    <!--AOS EFECT-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- scrool -->
+    <script src="./Assets/js/scrool.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

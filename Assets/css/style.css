@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+/* Configurações gerais */
+body, html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    font-size: 16px;
+    overflow-x: hidden;
+    
+}
+
+/* Navbar fixa e transparente */
+.btn-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+    color: black !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navbar com fundo quando rolar */
+.btn-header.scrolled {
+    background-color: rgba(4, 10, 91, 0.8);
+    color: rgb(255, 255, 255) !important;
+}
+
+/* Certifique-se de que os links da navbar também mudem de cor */
+.btn-header .navbar-nav .nav-link {
+    color: rgb(15, 9, 117) !important;
+}
+
+/* Quando rolar e a classe .scrolled for adicionada */
+.btn-header.scrolled .navbar-nav .nav-link {
+    color: white !important;
+}
+
+/* Navbar links */
+.nav-link {
+    position: relative;
+    color: #fdfdfd;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #2b7abe;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Logo */
+.logo {
+    max-width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    /* Pequeno zoom na logo */
+}
+
+/* Carousel */
+.carousel-item {
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    z-index: 11;
+    color: #ffffff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: none !important;
+}
+
+/* Efeito na imagem */
+.hover-effect {
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: brightness(0.7);
+}
+
+.hover-effect:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+
+/* Ajuste para telas menores, como celulares */
+@media (max-width: 768px) {
+    .carousel-item {
+        background-size: cover;
+        background-position: center center;
+        height: 60vh;
+    }
+}
+
+/* Ajuste extra para telas muito pequenas */
+@media (max-width: 480px) {
+    .carousel-item {
+        background-size: cover;
+        background-position: center center;
+        height: 50vh;
+    }
+}
+
+
+/* Classe personalizada para os cards */
+.custom-card {
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Estilo para o header do card */
+.custom-card-header {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+/* Imagem padrão com tamanho fixo */
+.custom-card-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Cores específicas para cada tipo de card */
+.custom-card.comercial {
+    border-color: #000000;
+}
+
+.custom-card.comercial .custom-card-header {
+    background-color: #1bc415;
+    color: white;
+}
+
+.custom-card.digiweb .custom-card-header {
+    background-color: #022e9c;
+    color: rgb(255, 255, 255);
+}
+
+.custom-card.digiweb {
+    border-color: #000000;
+}
+
+.custom-card.pedirmenu .custom-card-header {
+    background-color: #022e9c;
+    color: rgb(255, 255, 255);
+}
+
+.custom-card.pedirmenu {
+    border-color: #000000;
+}
+
+.custom-card.admindustria .custom-card-header {
+    background-color: #8f9cac;
+    color: rgb(255, 255, 255);
+}
+
+.custom-card.admindustria {
+    border-color: #000000;
+}
+
+.custom-card.gerencial {
+    border-color: #000000;
+}
+
+.custom-card.gerencial .custom-card-header {
+    background-color: #e23838;
+    color: white;
+}
+
+.custom-card.administrador {
+    border-color: #000000;
+}
+
+.custom-card.administrador .custom-card-header {
+    background-color: #62a8d5;
+    color: white;
+}
+
+/* Estilo de hover */
+.custom-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para a seção específica */
+.custom-section {
+    padding: 6rem 1rem;
+    background-color: #f9f9f9;
+}
+
+
+.animated-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #0056b3;
+    /* Azul profissional */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.animated-subtitle {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #444;
+    margin-top: 1rem;
+}
+
+/* Efeitos adicionais */
+.animated-title,
+.animated-subtitle {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+.padding_section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+/* Areas */
+.width_icon_links {
+    color: #4f4f4f;
+    filter: grayscale(100%) brightness(0) invert(1) brightness(0.5);
+    text-align: center;
+}
+
+/* End Areas */
+
+
+
+/* Botão do WhatsApp */
+.whatsapp-btn {
+    position: fixed;
+    /* Fixa o botão na tela */
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    /* Cor verde do WhatsApp */
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp-btn:hover {
+    background-color: #2545d3;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.whatsapp-btn i {
+    line-height: 60px;
+    /* Ajuste para centralizar o ícone */
+}
+
+/* Para dispositivos menores */
+@media screen and (max-width: 768px) {
+    .whatsapp-btn {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 25px;
+    }
+
+    .whatsapp-btn i {
+        line-height: 50px;
+    }
+}
+
+.whatsapp-btn {
+    position: fixed;
+    /* Fixa o botão na tela */
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    /* Cor verde do WhatsApp */
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp-btn:hover {
+    background-color: #2545d3;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.whatsapp-btn i {
+    line-height: 60px;
+    /* Ajuste para centralizar o ícone */
+}
+
+/* Para dispositivos menores */
+@media screen and (max-width: 768px) {
+    .whatsapp-btn {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 25px;
+    }
+
+    .whatsapp-btn i {
+        line-height: 50px;
+    }
+}
+
+
+/* Estilo geral para os ícones das redes sociais */
+.text-body-secondary {
+    color: #6c757d;
+    transition: color 0.3s ease;
+}
+
+/* Cores específicas para cada rede social */
+.text-body-secondary.twitterplus {
+    color: #1DA1F2 !important;
+}
+
+.text-body-secondary.instagram {
+    color: #C13584 !important;
+}
+
+.text-body-secondary.facebook {
+    color: #1877F2 !important;
+}
+
+/* Hover */
+.text-body-secondary:hover {
+    color: #000 !important;
+}
+
+
+/* Redes sociais no desktop: mantém alinhamento horizontal */
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+/* Responsividade: redes sociais no mobile */
+@media (max-width: 576px) {
+    .social-icons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .social-icons li {
+        flex: 0 1 30%;
+        text-align: center;
+    }
+
+    .social-icons li a {
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+
+/* Estilo do contêiner do pop-up */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    /* Escondido por padrão */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo do conteúdo do pop-up */
+.popup-content {
+    background: #7071759a;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px; /* Define o máximo de largura */
+    text-align: center;
+    position: relative;
+    box-sizing: border-box; /* Garante que o padding não ultrapasse a largura */
+}
+
+/* Botão para fechar o pop-up */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Estilo para a imagem no pop-up */
+.popup-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 767px) {
+    .popup-content {
+        width: 90%;
+        /* Ajusta a largura do conteúdo para 90% da tela */
+        padding: 15px;
+        /* Reduz o padding para dispositivos móveis */
+    }
+
+    .close-btn {
+        font-size: 18px;
+        /* Ajusta o tamanho do botão de fechar */
+    }
+
+    .popup-image {
+        max-width: 100%;
+        /* Garante que a imagem ocupe toda a largura disponível */
+    }
+}
+

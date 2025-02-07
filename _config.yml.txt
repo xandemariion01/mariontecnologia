@@ -1,0 +1,5 @@
+title: mariontecnologia
+description: Um site incrível feito por alexandre marion
+theme: jekyll-theme-primer
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
