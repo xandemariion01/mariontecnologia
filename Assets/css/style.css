@@ -2,14 +2,13 @@
 
 
 /* Configurações gerais */
-body,
-html {
+body, html {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #333;
     font-size: 16px;
     overflow-x: hidden;
-
+    
 }
 
 /* Navbar fixa e transparente */
@@ -83,7 +82,7 @@ html {
 
 /* Carousel */
 .carousel-item {
-    min-height: 100vh;
+    height: 100vh;
     position: relative;
     background-size: cover;
     background-position: center;
@@ -107,38 +106,37 @@ html {
 
 .carousel-control-prev,
 .carousel-control-next {
-    display: block !important;
-    /* Mostrar controles */
+    display: none !important;
 }
 
 /* Ajuste para telas menores, como celulares */
 @media (max-width: 768px) {
     .carousel-item {
-        min-height: 60vh;
-        min-height: -webkit-fill-available;
-        /* Para Safari */
-    }
-
-    .carousel-caption {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    .carousel-control-prev,
-    .carousel-control-next {
-        width: 30px;
-        /* Reduzir o tamanho dos controles */
-        height: 30px;
+        background-size: cover;
+        background-position: center center;
+        height: 60vh;
     }
 }
 
 /* Ajuste extra para telas muito pequenas */
 @media (max-width: 480px) {
     .carousel-item {
-        min-height: 50vh;
-        min-height: -webkit-fill-available;
-        /* Para Safari */
+        background-size: cover;
+        background-position: center center;
+        height: 50vh;
     }
+}
+
+/* Efeito na imagem */
+.hover-effect {
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: brightness(0.7);
+}
+
+.hover-effect:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
 }
 
 
@@ -435,12 +433,10 @@ html {
     padding: 20px;
     border-radius: 8px;
     width: 100%;
-    max-width: 500px;
-    /* Define o máximo de largura */
+    max-width: 500px; /* Define o máximo de largura */
     text-align: center;
     position: relative;
-    box-sizing: border-box;
-    /* Garante que o padding não ultrapasse a largura */
+    box-sizing: border-box; /* Garante que o padding não ultrapasse a largura */
 }
 
 /* Botão para fechar o pop-up */
@@ -480,6 +476,7 @@ html {
     }
 }
 
+/* Efeito na imagem */
 .hover-effect {
     border-radius: 10px;
     transition: transform 0.3s ease, filter 0.3s ease;
@@ -492,3 +489,4 @@ html {
     filter: brightness(1.2);
     /* Aumenta o brilho */
 }
+
