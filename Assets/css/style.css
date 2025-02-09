@@ -2,13 +2,14 @@
 
 
 /* Configurações gerais */
-body, html {
+body,
+html {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #333;
     font-size: 16px;
     overflow-x: hidden;
-    
+
 }
 
 /* Navbar fixa e transparente */
@@ -89,6 +90,31 @@ body, html {
     background-repeat: no-repeat;
 }
 
+/* Imagem padrão para desktop */
+.custom-carousel-item {
+    background-image: url('../img/Banner/banner_1.png'); /* Imagem para desktop */
+}
+
+/* Ajuste para telas menores, como celulares */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 60vh; /* Altura ajustada para mobile */
+    }
+
+    /* Imagem para dispositivos móveis */
+    .custom-carousel-item {
+        background-image: url('../img/Banner/teste2.png'); /* Imagem para mobile */
+    }
+}
+
+/* Ajuste extra para telas muito pequenas */
+@media (max-width: 480px) {
+    .carousel-item {
+        height: 50vh; /* Altura ajustada para telas muito pequenas */
+    }
+}
+
+/* Estilos adicionais */
 .carousel-item img {
     position: absolute;
     top: 0;
@@ -433,10 +459,12 @@ body, html {
     padding: 20px;
     border-radius: 8px;
     width: 100%;
-    max-width: 500px; /* Define o máximo de largura */
+    max-width: 500px;
+    /* Define o máximo de largura */
     text-align: center;
     position: relative;
-    box-sizing: border-box; /* Garante que o padding não ultrapasse a largura */
+    box-sizing: border-box;
+    /* Garante que o padding não ultrapasse a largura */
 }
 
 /* Botão para fechar o pop-up */
@@ -490,3 +518,43 @@ body, html {
     /* Aumenta o brilho */
 }
 
+/* Estilos gerais */
+.mobile-section {
+    padding: 20px 0; /* Espaçamento padrão */
+}
+
+.animated-title {
+    font-size: 2.5rem; /* Tamanho padrão para desktop */
+    margin-bottom: 20px;
+}
+
+.animated-subtitle {
+    font-size: 1.5rem; /* Tamanho padrão para desktop */
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    .mobile-section {
+        padding: 10px 0; /* Reduz o espaçamento para mobile */
+    }
+
+    .animated-title {
+        font-size: 1.8rem; /* Tamanho menor para mobile */
+        margin-bottom: 15px;
+    }
+
+    .animated-subtitle {
+        font-size: 1.2rem; /* Tamanho menor para mobile */
+    }
+}
+
+/* Ajustes extras para telas muito pequenas */
+@media (max-width: 480px) {
+    .animated-title {
+        font-size: 1.5rem; /* Tamanho ainda menor para telas pequenas */
+    }
+
+    .animated-subtitle {
+        font-size: 1rem; /* Tamanho ainda menor para telas pequenas */
+    }
+}
