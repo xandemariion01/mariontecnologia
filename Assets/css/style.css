@@ -169,7 +169,10 @@ html {
 /* Classe personalizada para os cards */
 .custom-card {
     border: 2px solid transparent;
+    border-radius: 15px; /* Bordas arredondadas */
     transition: all 0.3s ease-in-out;
+    overflow: hidden; /* Garante que as bordas arredondadas sejam aplicadas às imagens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
 }
 
 /* Estilo para o header do card */
@@ -182,11 +185,13 @@ html {
 .custom-card-img {
     height: 200px;
     object-fit: cover;
+    border-top-left-radius: 15px; /* Bordas arredondadas na parte superior da imagem */
+    border-top-right-radius: 15px;
 }
 
 /* Cores específicas para cada tipo de card */
 .custom-card.comercial {
-    border-color: #000000;
+    border-color: #ffffff;
 }
 
 .custom-card.comercial .custom-card-header {
@@ -200,7 +205,7 @@ html {
 }
 
 .custom-card.digiweb {
-    border-color: #000000;
+    border-color: #ffffff;
 }
 
 .custom-card.pedirmenu .custom-card-header {
@@ -209,7 +214,7 @@ html {
 }
 
 .custom-card.pedirmenu {
-    border-color: #000000;
+    border-color: #ffffff;
 }
 
 .custom-card.admindustria .custom-card-header {
@@ -218,11 +223,11 @@ html {
 }
 
 .custom-card.admindustria {
-    border-color: #000000;
+    border-color: #ffffff;
 }
 
 .custom-card.gerencial {
-    border-color: #000000;
+    border-color: #ffffff;
 }
 
 .custom-card.gerencial .custom-card-header {
@@ -231,7 +236,7 @@ html {
 }
 
 .custom-card.administrador {
-    border-color: #000000;
+    border-color: #ffffff;
 }
 
 .custom-card.administrador .custom-card-header {
@@ -242,7 +247,7 @@ html {
 /* Estilo de hover */
 .custom-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada ao passar o mouse */
 }
 
 /* Estilo para a seção específica */
