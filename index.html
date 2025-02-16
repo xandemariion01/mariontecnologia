@@ -46,15 +46,13 @@
     <!-- Substitua pelo URL da imagem -->
 
     <!-- Tema do navegador (Mobile) -->
-    <meta name="theme-color" content="#0d6efd"> <!-- Substitua pela cor principal do site -->
+    <meta name="theme-color" content="#0d6efd">
 
 
     <!-- Outros (caso aplique) -->
-    <link rel="canonical" href="https://www.mariontecnologia.com.br"> <!-- URL oficial da página -->
+    <link rel="canonical" href="https://www.mariontecnologia.com.br">
 
-    <!-- CSS Externo -->
-    <link rel="stylesheet" href="./Assets/css/style.css">
-
+    
     <!-- Fontes do Google -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
@@ -171,47 +169,47 @@
     </div>
 
     <!-- Carroulsel -->
-<main>
-    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <main>
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active custom-carousel-item">
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <!-- Conteúdo opcional -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item custom-carousel-item">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <!-- Conteúdo opcional -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item custom-carousel-item">
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <!-- Conteúdo opcional -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active custom-carousel-item">
-                <div class="container">
-                    <div class="carousel-caption text-start">
-                        <!-- Conteúdo opcional -->
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item custom-carousel-item">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <!-- Conteúdo opcional -->
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item custom-carousel-item">
-                <div class="container">
-                    <div class="carousel-caption text-end">
-                        <!-- Conteúdo opcional -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-</main>
+    </main>
 
     <section class="py-5 section-light">
         <div class="container px-4 py-5">
@@ -758,6 +756,14 @@
 
     <!-- scrool -->
     <script src="./Assets/js/scrool.js"></script>
+
+    <script>
+        var link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = "../Assets/css/style.css";
+        document.head.appendChild(link);
+
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
