@@ -39,6 +39,40 @@ html {
     color: white !important;
 }
 
+/* Tornar a navbar fixa e com as cores no mobile */
+@media (max-width: 768px) {
+    .btn-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000; 
+        background: linear-gradient(135deg, rgba(4, 10, 91, 0.9), rgba(43, 122, 190, 0.9));
+    }
+}
+
+/* Tornar a navbar fixa e com as cores no mobile */
+@media (max-width: 768px) {
+    .btn-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000; 
+        background: linear-gradient(135deg, rgba(4, 10, 91, 0.9), rgba(43, 122, 190, 0.9)); 
+    }
+
+    /* Links brancos no mobile */
+    .btn-header .navbar-nav .nav-link {
+        color: white !important; 
+    }
+
+   
+    body {
+        padding-top: 60px; 
+    }
+}
+
 /* Navbar links */
 .nav-link {
     position: relative;
