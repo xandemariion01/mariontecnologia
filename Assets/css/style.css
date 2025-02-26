@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-
 /* Configurações gerais */
 body,
 html {
@@ -8,87 +7,76 @@ html {
     font-size: 16px;
     color: #333;
     overflow-x: hidden;
-
+    margin: 0;
+    padding: 0;
 }
 
+/* Hero section (equivalente ao container que deve pegar toda a tela) */
 .hero-section {
     position: relative;
     width: 100%;
-    height: 100vh; /* Altura total da viewport */
+    height: 100vh; /* Garante que ocupe toda a altura da tela */
     overflow: hidden;
+    z-index: 0;
 }
 
+/* Vídeo */
 .hero-video {
     width: 100%;
     height: 100%;
+    display: block;
     object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
 }
 
+/* Conteúdo sobre o vídeo */
 .hero-content {
     position: absolute;
-    top: 65%;
+    top: 65%; /* Volta ao posicionamento original que você tinha */
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    z-index: 1; /* Acima do vídeo, mas abaixo da navbar */
+    z-index: 1;
 }
 
-.hero-content h1 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-    line-height: 1.2;
-}
-
-.hero-content p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-}
-
+/* Estilo do botão */
 .btn-learn-more {
     display: inline-block;
-    padding: 12px 24px; /* Aumentado para um botão mais robusto */
+    padding: 12px 24px;
     background-color: #ffffff;
-    color: #1a73e8; /* Cor azul moderna, como em designs de tecnologia */
+    color: #1a73e8;
     text-decoration: none;
-    border-radius: 25px; /* Bordas mais arredondadas para um look moderno */
-    font-weight: 600; /* Peso de fonte um pouco mais leve, mas ainda bold */
+    border-radius: 25px;
+    font-weight: 600;
     text-transform: uppercase;
-    border: 2px solid #ffffff; /* Borda branca para contraste */
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Transições mais suaves */
+    border: 2px solid #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .btn-learn-more:hover {
-    background-color: #1a73e8; /* Cor azul ao passar o mouse */
-    color: #ffffff; /* Texto branco ao passar o mouse */
-    transform: scale(1.05); /* Efeito de zoom leve para modernidade */
+    background-color: #1a73e8;
+    color: #ffffff;
+    transform: scale(1.05);
 }
 
-/* Esconde a seção em desktop e mostra apenas em mobile */
-@media (min-width: 769px) {
-    .hero-section {
-        display: none;
-    }
-}
-
+/* Ajustes para mobile */
 @media (max-width: 768px) {
     .hero-section {
         display: block;
     }
 
-    /* Ajusta a navbar para não sobrepor o hero em mobile */
-    .btn-header {
-        position: relative; /* Remove o fixed para mobile, se necessário */
-    }
-
     body {
-        padding-top: 0; /* Remove padding-top, já que o hero ocupa a tela inteira */
+        padding-top: 0; /* Remove padding para o vídeo começar do topo */
+    }
+}
+
+/* Esconde em desktop */
+@media (min-width: 769px) {
+    .hero-section {
+        display: none;
     }
 }
 
@@ -102,7 +90,8 @@ html {
     height: 100%;
     background: url('./Assets/img/seu-fundo.jpg') no-repeat center center;
     background-size: cover;
-    z-index: 0; /* Abaixo do conteúdo, mas acima do vídeo, se houver */
+    z-index: 0;
+    /* Abaixo do conteúdo, mas acima do vídeo, se houver */
 }
 
 /* Navbar fixa e transparente */
@@ -111,6 +100,7 @@ html {
     top: 0;
     left: 0;
     width: 100%;
+    height: 60px;
     z-index: 1000;
     background-color: transparent;
     color: black !important;
@@ -140,7 +130,7 @@ html {
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 1000; 
+        z-index: 1000;
         background: linear-gradient(135deg, rgba(4, 10, 91, 0.9), rgba(43, 122, 190, 0.9));
     }
 }
@@ -152,23 +142,24 @@ html {
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 1000; 
-        background: linear-gradient(135deg, rgba(4, 10, 91, 0.9), rgba(43, 122, 190, 0.9)); 
+        z-index: 1000;
+        background: linear-gradient(135deg, rgba(4, 10, 91, 0.9), rgba(43, 122, 190, 0.9));
     }
 
     /* Links brancos no mobile */
     .btn-header .navbar-nav .nav-link {
-        color: white !important; 
+        color: white !important;
     }
 
     /* Garante que o fundo gradiente azul permaneça ao abrir o menu toggle */
     .navbar-collapse {
         background: linear-gradient(135deg, rgba(4, 10, 91, 0.9), rgba(43, 122, 190, 0.9));
-        padding: 1rem; /* Adiciona padding interno ao menu expandido */
+        padding: 1rem;
+        /* Adiciona padding interno ao menu expandido */
     }
 
     body {
-        padding-top: 60px; 
+        padding-top: 60px;
     }
 }
 
@@ -232,13 +223,13 @@ html {
 @media (max-width: 768px) {
     .carousel-item {
         min-height: 60vh;
-        display: none!important;
+        display: none !important;
         /* Altura ajustada para mobile */
     }
 
     /* Imagem para dispositivos móveis */
     .custom-carousel-item {
-        display: none!important;
+        display: none !important;
         background-image: url('../img/Banner/alexmar.png');
         /* Imagem para mobile */
     }
@@ -295,62 +286,13 @@ html {
     padding: 20px;
 }
 
-/* Carrossel (desktop e mobile) */
-.carousel-item {
-    height: 100vh;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/* Imagem padrão para desktop */
-.custom-carousel-item {
-    background-image: url('../img/Banner/banner_1.png');
-}
-
-/* Estilos adicionais */
-.carousel-item img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.carousel-caption {
-    z-index: 11;
-    color: #ffffff;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
-}
-
-/* Setas do carrossel (visíveis em desktop, ocultas em mobile) */
-.carousel-control-prev,
-.carousel-control-next {
-    display: flex !important; /* Visível por padrão em desktop */
-    width: 5%;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    opacity: 1;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    padding: 20px;
-}
-
 /* Oculta as setas apenas em mobile (≤ 768px) */
 @media (max-width: 768px) {
+
     .carousel-control-prev,
     .carousel-control-next {
-        display: none !important; /* Oculta as setas em mobile */
+        display: none !important;
+        /* Oculta as setas em mobile */
     }
 
     .carousel-item {
