@@ -3,10 +3,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeBtn = document.querySelector(".close-btn");
   const closeButton = document.querySelector(".close-popup-btn");
 
-  // Mostra o pop-up após 2 segundos
-  setTimeout(() => {
-    popup.style.display = "flex";
-  }, 2000);
+  // Verifica se o dispositivo é mobile (largura da tela ≤ 768px)
+  function isMobile() {
+    return window.innerWidth <= 768;
+  }
+
+  // Mostra o pop-up após 2 segundos, mas apenas em desktop
+  if (!isMobile()) {
+    setTimeout(() => {
+      popup.style.display = "flex";
+    }, 2000);
+  }
 
   // Fecha o pop-up ao clicar no botão de fechar (span)
   closeBtn.addEventListener("click", () => {
