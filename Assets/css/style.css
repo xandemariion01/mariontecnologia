@@ -86,7 +86,8 @@ html {
     }
 
     body {
-        padding-top: 0; /* Remove padding para o vídeo começar do topo */
+        padding-top: 0;
+        /* Remove padding para o vídeo começar do topo */
     }
 }
 
@@ -118,7 +119,7 @@ html {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: transparent;
+    background: linear-gradient(135deg, rgba(4, 10, 91, 0.314), rgba(43, 122, 190, 0.9));
     color: black !important;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -131,7 +132,7 @@ html {
 
 /* Certifique-se de que os links da navbar também mudem de cor */
 .btn-header .navbar-nav .nav-link {
-    color: rgb(15, 9, 117) !important;
+    color: rgb(255, 254, 255) !important;
 }
 
 /* Quando rolar e a classe .scrolled for adicionada */
@@ -209,7 +210,8 @@ html {
 }
 
 .logo {
-    max-width: 150px; /* Padrão desktop */
+    max-width: 150px;
+    /* Padrão desktop */
     height: auto;
 }
 
@@ -220,13 +222,15 @@ html {
 
 @media (max-width: 768px) {
     .logo {
-        max-width: 100px; /* Ajuste para mobile */
+        max-width: 100px;
+        /* Ajuste para mobile */
     }
 }
 
 @media (max-width: 480px) {
     .logo {
-        max-width: 80px; /* Para telas menores */
+        max-width: 80px;
+        /* Para telas menores */
     }
 }
 
@@ -832,3 +836,210 @@ html {
 .width_icon_links:hover h4 {
     color: #0056b3;
 }
+
+
+.footer {
+    background-color: #f8f9fa;
+    /* Cor de fundo opcional */
+}
+
+.social-icons a:hover {
+    color: #007bff;
+    /* Cor ao passar o mouse */
+    transition: color 0.3s ease;
+}
+
+#lg_footer:hover {
+    transform: scale(1.1)!important;
+    /* Efeito de zoom ao passar o mouse */
+
+}
+
+/* Estilo para as logos */
+.lg-footer {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 767px) {
+    .logos {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .lg-footer {
+        width: 120px;
+    }
+}
+
+@media (min-width: 768px) {
+    .logos {
+        gap: 20px;
+    }
+}
+
+
+
+/*  CUSTUMIZADO PARA O MEU FOOTER XANDAO */
+
+
+/* Estilo geral do footer escuro */
+.footer-dark {
+    background: linear-gradient(135deg, rgba(4, 10, 91, 0.9), rgba(43, 122, 190, 0.9));
+    color: #fcfcfc;
+  }
+
+  /* Títulos do footer */
+  .footer-title {
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 2px solid #e31b23;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Links e texto no footer */
+  .text-muted {
+    color: #fff;
+  }
+
+  .text-muted:hover {
+    color: #fff !important;
+    text-decoration: none;
+  }
+
+  /* Estilo para as logos */
+  .lg-footer {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .lg-footer:hover {
+    transform: scale(1.1); 
+}
+
+  @media (max-width: 767px) {
+    .logos {
+      flex-direction: row;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .lg-footer {
+      width: 120px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .logos {
+      gap: 20px;
+    }
+  }
+
+  /* Estilo geral para os ícones das redes sociais */
+  .instagram, .facebook {
+    color: #6c757d;
+    transition: color 0.3s ease;
+  }
+
+  /* Cores específicas para cada rede social */
+  .instagram {
+    color: #C13584 !important;
+  }
+
+  .instagram:hover {
+    color: #d90707 !important;
+  }
+
+  .facebook {
+    color: #1877F2 !important;
+  }
+
+  .facebook:hover {
+    color: #1003c6 !important;
+  }
+
+  /* Hover geral */
+  .instagram:hover, .facebook:hover {
+    color: #000 !important;
+  }
+
+  /* Ajustes de espaçamento e centralização */
+  .footer .nav-link {
+    line-height: 1.5;
+  }
+
+  @media (min-width: 768px) {
+    .row.justify-content-center > .col-md-3 {
+      flex: 0 0 auto;
+      max-width: 25%;
+    }
+
+    .d-flex.justify-content-center {
+      margin: 0 auto;
+      max-width: 1140px;
+    }
+  }
+
+  /* Botão do WhatsApp */
+  .whatsapp-btn {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .whatsapp-btn {
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+
+    70% {
+      box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+  }
+
+  .whatsapp-btn:hover {
+    background-color: #2545d3;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .whatsapp-btn i {
+    line-height: 60px;
+  }
+
+  /* Para dispositivos menores */
+  @media screen and (max-width: 768px) {
+    .whatsapp-btn {
+      width: 50px;
+      height: 50px;
+      bottom: 20px;
+      right: 20px;
+      font-size: 25px;
+    }
+
+    .whatsapp-btn i {
+      line-height: 50px;
+    }
+  }
