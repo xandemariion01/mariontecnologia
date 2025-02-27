@@ -900,12 +900,6 @@ html {
     margin-bottom: 1rem;
 }
 
-
-.text-muted:hover {
-    color: #fff !important;
-    text-decoration: none;
-}
-
 /* Estilo para as logos */
 .lg-footer {
     max-width: 100%;
@@ -916,6 +910,29 @@ html {
 .lg-footer:hover {
     transform: scale(1.1);
 }
+
+/* Cores específicas para cada rede social (desktop) */
+.facebook {
+    color: #1877F2 !important; /* Azul do Facebook */
+}
+
+.facebook:hover {
+    color: #28037c !important; /* Hover apenas no desktop */
+}
+
+.instagram {
+    color: #C13584 !important; /* Rosa do Instagram */
+}
+
+.instagram:hover {
+    color: #8f0404 !important; /* Hover apenas no desktop */
+}
+
+/* Links e texto no footer */
+.text-muted:hover {
+    color: #fff !important;
+}
+
 
 @media (max-width: 767px) {
     .logos {
@@ -939,69 +956,12 @@ html {
         border-bottom: 2px solid #e31b23 !important;
     }
 
-    .text-muted {
-        color: #fff !important;
-    }
+    
 }
 
 @media (min-width: 768px) {
     .logos {
         gap: 20px;
-    }
-}
-
-
-
-/* Cores específicas para cada rede social (padrão e hover) */
-.facebook {
-    color: #1877F2 !important;
-}
-
-.facebook:hover {
-    color: #1003c6 !important;
-}
-
-.instagram {
-    color: #d90707 !important;
-}
-
-.instagram:hover {
-    color: #d90707 !important;
-}
-
-/* Forçar cores no mobile (sem hover, mas com cor padrão) */
-@media (max-width: 767px) {
-    .instagram, .facebook {
-        color: #C13584 !important; /* Cor padrão para Instagram no mobile */
-        color: #1877F2 !important; 
-    }
-
-    /* Remover hover no mobile, mas manter cor padrão */
-    .instagram:hover, .facebook:hover {
-        color: #C13584 !important;
-        color: #1877F2 !important;
-    }
-}
-
-/* Hover geral (desktop apenas) */
-.instagram:hover, .facebook:hover {
-    color: #000 !important;
-}
-
-/* Ajustes de espaçamento e centralização */
-.footer .nav-link {
-    line-height: 1.5;
-}
-
-@media (min-width: 768px) {
-    .row.justify-content-center > .col-md-3 {
-        flex: 0 0 auto;
-        max-width: 25%;
-    }
-
-    .d-flex.justify-content-center {
-        margin: 0 auto;
-        max-width: 1140px;
     }
 }
 
