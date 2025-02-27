@@ -900,10 +900,6 @@ html {
     margin-bottom: 1rem;
 }
 
-/* Links e texto no footer */
-.text-muted {
-    color: #fff !important;
-}
 
 .text-muted:hover {
     color: #fff !important;
@@ -954,21 +950,9 @@ html {
     }
 }
 
-/* Estilo geral para os ícones das redes sociais */
-.instagram, .facebook {
-    color: #6c757d;
-    transition: color 0.3s ease;
-}
+
 
 /* Cores específicas para cada rede social (padrão e hover) */
-.instagram {
-    color: #C13584 !important;
-}
-
-.instagram:hover {
-    color: #d90707 !important;
-}
-
 .facebook {
     color: #1877F2 !important;
 }
@@ -977,10 +961,18 @@ html {
     color: #1003c6 !important;
 }
 
+.instagram {
+    color: #d90707 !important;
+}
+
+.instagram:hover {
+    color: #d90707 !important;
+}
+
 /* Forçar cores no mobile (sem hover, mas com cor padrão) */
 @media (max-width: 767px) {
     .instagram, .facebook {
-        color: #C13584 !important; 
+        color: #C13584 !important; /* Cor padrão para Instagram no mobile */
         color: #1877F2 !important; 
     }
 
