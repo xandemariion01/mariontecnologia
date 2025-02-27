@@ -887,104 +887,134 @@ html {
 
 /* Estilo geral do footer escuro */
 .footer-dark {
-    background: linear-gradient(135deg, rgba(4, 10, 91, 0.9), rgba(43, 122, 190, 0.9));
-    color: #fcfcfc;
-  }
-
-  /* Títulos do footer */
-  .footer-title {
-    color: #fff;
-    font-weight: bold;
-    border-bottom: 2px solid #e31b23;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-  }
-
-  /* Links e texto no footer */
-  .text-muted {
-    color: #fff;
-  }
-
-  .text-muted:hover {
-    color: #fff !important;
-    text-decoration: none;
-  }
-
-  /* Estilo para as logos */
-  .lg-footer {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .lg-footer:hover {
-    transform: scale(1.1); 
+    background: linear-gradient(135deg, rgba(4, 10, 91, 0.9), rgba(43, 122, 190, 0.9)) !important;
+    color: #fcfcfc !important;
 }
 
-  @media (max-width: 767px) {
+/* Títulos do footer */
+.footer-title {
+    color: #fff !important;
+    font-weight: bold;
+    border-bottom: 2px solid #e31b23 !important;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Links e texto no footer */
+.text-muted {
+    color: #fff !important;
+}
+
+.text-muted:hover {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+/* Estilo para as logos */
+.lg-footer {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.lg-footer:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
     .logos {
-      flex-direction: row;
-      justify-content: center;
-      gap: 15px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
     }
 
     .lg-footer {
-      width: 120px;
+        width: 120px;
     }
-  }
 
-  @media (min-width: 768px) {
+    /* Forçar cores do footer no mobile */
+    .footer-dark {
+        background: linear-gradient(135deg, rgba(4, 10, 91, 0.9), rgba(43, 122, 190, 0.9)) !important;
+        color: #fcfcfc !important;
+    }
+
+    .footer-title {
+        color: #fff !important;
+        border-bottom: 2px solid #e31b23 !important;
+    }
+
+    .text-muted {
+        color: #fff !important;
+    }
+}
+
+@media (min-width: 768px) {
     .logos {
-      gap: 20px;
+        gap: 20px;
     }
-  }
+}
 
-  /* Estilo geral para os ícones das redes sociais */
-  .instagram, .facebook {
+/* Estilo geral para os ícones das redes sociais */
+.instagram, .facebook {
     color: #6c757d;
     transition: color 0.3s ease;
-  }
+}
 
-  /* Cores específicas para cada rede social */
-  .instagram {
+/* Cores específicas para cada rede social (padrão e hover) */
+.instagram {
     color: #C13584 !important;
-  }
+}
 
-  .instagram:hover {
+.instagram:hover {
     color: #d90707 !important;
-  }
+}
 
-  .facebook {
+.facebook {
     color: #1877F2 !important;
-  }
+}
 
-  .facebook:hover {
+.facebook:hover {
     color: #1003c6 !important;
-  }
+}
 
-  /* Hover geral */
-  .instagram:hover, .facebook:hover {
+/* Forçar cores no mobile (sem hover, mas com cor padrão) */
+@media (max-width: 767px) {
+    .instagram, .facebook {
+        color: #C13584 !important; 
+        color: #1877F2 !important; 
+    }
+
+    /* Remover hover no mobile, mas manter cor padrão */
+    .instagram:hover, .facebook:hover {
+        color: #C13584 !important;
+        color: #1877F2 !important;
+    }
+}
+
+/* Hover geral (desktop apenas) */
+.instagram:hover, .facebook:hover {
     color: #000 !important;
-  }
+}
 
-  /* Ajustes de espaçamento e centralização */
-  .footer .nav-link {
+/* Ajustes de espaçamento e centralização */
+.footer .nav-link {
     line-height: 1.5;
-  }
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
     .row.justify-content-center > .col-md-3 {
-      flex: 0 0 auto;
-      max-width: 25%;
+        flex: 0 0 auto;
+        max-width: 25%;
     }
 
     .d-flex.justify-content-center {
-      margin: 0 auto;
-      max-width: 1140px;
+        margin: 0 auto;
+        max-width: 1140px;
     }
-  }
+}
 
-  /* Botão do WhatsApp */
-  .whatsapp-btn {
+/* Botão do WhatsApp */
+.whatsapp-btn {
     position: fixed;
     width: 60px;
     height: 60px;
@@ -1000,47 +1030,47 @@ html {
     transition: all 0.3s ease;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .whatsapp-btn {
+.whatsapp-btn {
     animation: pulse 2s infinite;
-  }
+}
 
-  @keyframes pulse {
+@keyframes pulse {
     0% {
-      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
     }
 
     70% {
-      box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+        box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
     }
 
     100% {
-      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
     }
-  }
+}
 
-  .whatsapp-btn:hover {
+.whatsapp-btn:hover {
     background-color: #2545d3;
     text-decoration: none;
     transition: all 0.2s ease;
-  }
+}
 
-  .whatsapp-btn i {
+.whatsapp-btn i {
     line-height: 60px;
-  }
+}
 
-  /* Para dispositivos menores */
-  @media screen and (max-width: 768px) {
+/* Para dispositivos menores */
+@media screen and (max-width: 768px) {
     .whatsapp-btn {
-      width: 50px;
-      height: 50px;
-      bottom: 20px;
-      right: 20px;
-      font-size: 25px;
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 25px;
     }
 
     .whatsapp-btn i {
-      line-height: 50px;
+        line-height: 50px;
     }
-  }
+}
