@@ -956,7 +956,9 @@ html {
         border-bottom: 2px solid #e31b23 !important;
     }
 
-    
+    .text-muted {
+        color: #fff !important;
+    }
 }
 
 @media (min-width: 768px) {
@@ -964,6 +966,10 @@ html {
         gap: 20px;
     }
 }
+
+
+
+
 
 /* Botão do WhatsApp */
 .whatsapp-btn {
