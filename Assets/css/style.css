@@ -1058,35 +1058,40 @@ html {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-}
-
-/* Container do slider */
-.slider-container {
+  }
+  
+  /* Container do slider */
+  .slider-container {
     overflow: hidden;
     position: relative;
-}
-
-/* Wrapper que contém os cards */
-.slider-wrapper {
+    width: 100%; /* Garante que o container ocupe toda a largura disponível */
+  }
+  
+  /* Wrapper que contém os cards */
+  .slider-wrapper {
     display: flex;
     transition: transform 0.5s linear;
-}
-
-/* Cards com tamanho fixo */
-.novidades-slider-card {
+    min-width: 100%; /* Garante que o wrapper tenha espaço suficiente */
+    min-height: 250px; /* Altura mínima para evitar colapso */
+  }
+  
+  /* Cards com tamanho fixo */
+  .novidades-slider-card {
     flex: 0 0 200px;
     margin-right: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Efeito de hover no card */
-.novidades-slider-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Ajuste dos cards */
-.novidades-card {
+  }
+  
+  /* Efeito de hover no card (aplicado apenas em desktop) */
+  @media (hover: hover) and (pointer: fine) {
+    .novidades-slider-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+  }
+  
+  /* Ajuste dos cards */
+  .novidades-card {
     border: none;
     border-radius: 10px;
     background: #fff;
@@ -1095,38 +1100,39 @@ html {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-}
-
-/* Imagens com altura fixa */
-.novidades-card-img-top {
+  }
+  
+  /* Imagens com altura fixa */
+  .novidades-card-img-top {
+    width: 200px; /* Largura fixa para consistência */
     height: 150px;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-}
-
-/* Corpo do card */
-.novidades-card-body {
+  }
+  
+  /* Corpo do card */
+  .novidades-card-body {
     padding: 12px !important;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background: #f9f9f9;
-}
-
-/* Texto pequeno e compacto */
-.novidades-card-text {
+  }
+  
+  /* Texto pequeno e compacto */
+  .novidades-card-text {
     font-size: 0.9rem;
     line-height: 1.3;
     margin-bottom: 10px !important;
     color: #333;
     font-weight: 500;
     text-align: center;
-}
-
-/* Botão Informações */
-.novidades-btn {
+  }
+  
+  /* Botão Informações */
+  .novidades-btn {
     font-size: 0.9rem;
     padding: 8px;
     background-color: #25D366;
@@ -1138,48 +1144,51 @@ html {
     align-items: center;
     justify-content: center;
     color: white;
-}
-
-/* Ícone de WhatsApp no botão */
-.novidades-btn::before {
+  }
+  
+  /* Ícone de WhatsApp no botão */
+  .novidades-btn::before {
     content: '\f232';
     font-family: 'bootstrap-icons';
     margin-right: 5px;
     font-size: 1rem;
-}
-
-/* Efeito de hover no botão */
-.novidades-btn:hover {
-    background-color: #1ebe52;
-    transform: scale(1.05);
-    color: white;
-}
-
-/* Ajustes para mobile */
-@media (max-width: 576px) {
+  }
+  
+  /* Efeito de hover no botão (aplicado apenas em desktop) */
+  @media (hover: hover) and (pointer: fine) {
+    .novidades-btn:hover {
+      background-color: #1ebe52;
+      transform: scale(1.05);
+      color: white;
+    }
+  }
+  
+  /* Ajustes para mobile */
+  @media (max-width: 576px) {
     .novidades-slider-card {
-        flex: 0 0 150px;
-        margin-right: 10px;
+      flex: 0 0 150px;
+      margin-right: 10px;
     }
-
+  
     .novidades-card {
-        height: 200px;
+      height: 200px;
     }
-
+  
     .novidades-card-img-top {
-        height: 100px;
+      width: 150px; /* Ajusta a largura para mobile */
+      height: 100px;
     }
-
+  
     .novidades-card-text {
-        font-size: 0.8rem;
+      font-size: 0.8rem;
     }
-
+  
     .novidades-btn {
-        font-size: 0.8rem;
-        padding: 6px;
+      font-size: 0.8rem;
+      padding: 6px;
     }
-
+  
     .novidades-btn::before {
-        font-size: 0.9rem;
+      font-size: 0.9rem;
     }
-}
+  }
