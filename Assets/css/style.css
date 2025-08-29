@@ -1198,6 +1198,15 @@ html {
 }
 
 .grid-item {
-  width: 48%;
-  margin-bottom: 20px;
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+#promo-img {
+    width: 500px;
+    height: 550px;
+    object-fit: cover;
+    transition: transform 0.5s ease, opacity 1s ease-in-out;
+    /* efeito de fade */
+    opacity: 1;
 }

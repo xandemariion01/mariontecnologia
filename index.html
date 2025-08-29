@@ -489,20 +489,21 @@
         </div>
     </section>
 
-    <section class="py-5 section-light">
+    <section class="py-5 section-light" id="promo-section">
         <div class="container px-4 py-5">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6 order-lg-last" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
-                    <img src="./Assets/img/Sistemas/IMG_5167.jpg" class="img-fluid rounded shadow hover-effect"
-                        alt="Pedir Menu" loading="lazy">
-                    <h5 class="mt-3">Pedir Menu: o app que turbina seu restaurante com pedidos rápidos, zero erros e
-                        vendas nas alturas.</h5>
-                    <p>Lucro na mão, hoje mesmo!</p>
+                    <img id="promo-img" src="./Assets/img/Sistemas/IMG_5167.jpg"
+                        class="img-fluid rounded shadow hover-effect" alt="Pedir Menu" loading="lazy">
+                    <h5 id="promo-title" class="mt-3">
+                        Pedir Menu: o app que turbina seu restaurante com pedidos rápidos, zero erros e vendas nas
+                        alturas.
+                    </h5>
+                    <p id="promo-desc">Lucro na mão, hoje mesmo!</p>
                 </div>
 
                 <div class="col-lg-6" data-aos="fade-up" data-aos-duration="2000">
-                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Gestão. Tecnologia. Solução.
-                    </h1>
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Gestão. Tecnologia. Solução.</h1>
                     <p class="lead">Transformamos gestão e tecnologia em soluções inteligentes para o seu sucesso!</p>
                 </div>
             </div>
@@ -1139,14 +1140,19 @@
             border-radius: 20px;
             padding: 1px;
             background: conic-gradient(from 0turn, var(--acc), transparent 20%, transparent 60%, var(--acc));
-            -webkit-mask:
-                linear-gradient(#000 0 0) content-box,
-                linear-gradient(#000 0 0);
+
+            /* Para Webkit (Chrome, Safari) */
+            -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
             -webkit-mask-composite: xor;
+
+            /* Versão padrão para outros navegadores modernos */
+            mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
             mask-composite: exclude;
+
             animation: spin 6s linear infinite;
             opacity: .55;
         }
+
 
         @keyframes spin {
             to {
@@ -1500,6 +1506,8 @@
             event.preventDefault(); // Impede o menu de contexto de abrir
         });
     </script>
+
+    <script src="./Assets/js/promo.js"></script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
